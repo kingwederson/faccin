@@ -18,13 +18,14 @@ h3{
     font-size: 26pt;
 }
 section{
-    padding:0%;
+    padding:100px;
     padding-bottom:150px;
     margin:150px;
 }
 section:nth-child(odd){
     background-color: black;
     color: rgb(77,218,141);
+    border:1px solid rgb(77,218,141);
 }
 section:nth-child(even){
     background-color:rgb(77,218,141);
@@ -32,34 +33,27 @@ section:nth-child(even){
 }
 section#cab{            
     clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
-    transform: translate(0%,-30%);
+    padding:20px;
+    margin:0px;
     position: sticky;
     top:0px;
     left:0px;
 }
 section#primeira{
     min-height: 400px;
-    min-width:400px;
-    clip-path: polygon(0 0%, 100% -10%, 100% 90%, 0 100%);
-    transform: translate(0%,-200px);
+    clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0 100%);
 }
 section#segunda{
     min-height: 600px;
-    min-width: 400px;
-    clip-path: polygon(0 0%, 100% -10%, 110% 100%, 0 100%);
-    transform: translate(0%,-200px);
+    clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0 100%);
 }
 section#terceira{
     min-height: 400px;
-    min-width: 400px;
-    clip-path: polygon(0 0%, 100% -10%, 110% 100%, 0 100%);
-    transform: translate(0%,-200px);
+    clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0 100%);
 }
 section#quarta{
     min-height: 400px;
-    min-width: 400px;
     clip-path: polygon(0 0%, 100% -10%, 100% 90%, 0 100%);
-    transform: translate(0%,-200px);
 }
 nav#menu ul{
     list-style:none;
@@ -88,6 +82,10 @@ img#logo{
 img.cliente{
     max-width: 256px;
     border-radius: 100px;
+}
+div.texto{
+    columns: 400px;
+    column-gap: 1cm;
 }
 div.conteudo{
     display: block;
