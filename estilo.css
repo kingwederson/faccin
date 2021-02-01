@@ -18,8 +18,9 @@ h3{
     font-size: 26pt;
 }
 section{
-    padding:10%;
-    padding-bottom:100px;
+    padding:0%;
+    padding-bottom:150px;
+    margin:150px;
 }
 section:nth-child(odd){
     background-color: black;
@@ -39,19 +40,25 @@ section#cab{
 section#primeira{
     min-height: 400px;
     min-width:400px;
-    clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
+    clip-path: polygon(0 0%, 100% -10%, 100% 90%, 0 100%);
     transform: translate(0%,-200px);
 }
 section#segunda{
-    min-height: 500px;
+    min-height: 600px;
     min-width: 400px;
-    clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
+    clip-path: polygon(0 0%, 100% -10%, 110% 100%, 0 100%);
     transform: translate(0%,-200px);
 }
 section#terceira{
     min-height: 400px;
     min-width: 400px;
-    clip-path: polygon(0 20%, 100% 0, 100% 80%, 0 100%);
+    clip-path: polygon(0 0%, 100% -10%, 110% 100%, 0 100%);
+    transform: translate(0%,-200px);
+}
+section#quarta{
+    min-height: 400px;
+    min-width: 400px;
+    clip-path: polygon(0 0%, 100% -10%, 100% 90%, 0 100%);
     transform: translate(0%,-200px);
 }
 nav#menu ul{
@@ -86,14 +93,19 @@ div.conteudo{
     display: block;
 }
 div.coninter{
-    max-width:300px;
+    max-width:100%;
     display: block;
-    float: left;
+    break-inside: avoid;
     transition-duration: 4s;
+    border:1px black red;
+    text-align: center;
 }
 iframe{
     border-radius: 20px;
-    display: inline-block;
+    display: inline-flex;
+    float:left;
+    width:426px;
+    height:240px;
 }
 q{
     font-family: 'Potta One', sans-serif;
@@ -112,4 +124,23 @@ p.box{
     border:1px solid black;
     margin:auto;
     padding:64px;
+}
+input[type="text"]{
+    font-size: 32pt;
+    color:black;
+    font-family: 'Potta One';
+}
+input[type="submit"]{
+    background-color:rgb(77,218,141);
+    font-size: 18pt;
+    margin:12px;
+    padding:12px;
+    color:black;
+    font-family: 'Potta One';
+    border-radius: 18px;
+}
+.fluido{
+    display:inline;
+    text-align: center;
+    margin:auto;
 }
