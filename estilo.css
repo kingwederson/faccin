@@ -1,0 +1,112 @@
+body{
+    background-color: rgb(77,218,141);
+    margin:auto;
+    border-radius: 40px;
+}
+h1,h2,h3{
+    text-align: center;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-size: 32pt;
+    font-family: 'Potta One', cursive;
+    transition-duration: 4s;
+}
+h2{
+    font-size: 32pt;
+}
+h3{
+    font-size: 26pt;
+}
+section{
+    padding:10%;
+    padding-bottom:100px;
+}
+section:nth-child(odd){
+    background-color: black;
+    color: rgb(77,218,141);
+}
+section:nth-child(even){
+    background-color:rgb(77,218,141);
+    color: black;
+}
+section#cab{            
+    clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
+    transform: translate(0%,-30%);
+}
+section#primeira{
+    min-height: 400px;
+    min-width:400px;
+    clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
+    transform: translate(0%,-200px);
+}
+section#segunda{
+    min-height: 500px;
+    min-width: 400px;
+    clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
+    transform: translate(0%,-200px);
+}
+section#terceira{
+    min-height: 400px;
+    min-width: 400px;
+    clip-path: polygon(0 20%, 100% 0, 100% 80%, 0 100%);
+    transform: translate(0%,-200px);
+}
+nav#menu ul{
+    list-style:none;
+    margin:auto;
+}
+nav#menu li{
+    display: inline-block;
+    font-size: 18pt;
+    font-family: 'Coda Caption', sans-serif;
+    background-color: rgb(77,218,141);
+    color:black;
+    padding:10px;
+    border-radius:17px;
+    text-transform: uppercase;
+    transition-duration: 4s;
+}
+nav#menu li:hover{
+    color:red;
+    transition: 0.8s;
+}
+img#logo{
+    display: inline-block;
+    max-width: 256px;
+    transform: translate(0%,40%);
+}
+img.cliente{
+    max-width: 256px;
+    border-radius: 100px;
+}
+div.conteudo{
+    display: inline-block;
+}
+div.coninter{
+    max-width:300px;
+    display: inline-block;
+    float: left;
+    transition-duration: 4s;
+}
+iframe{
+    border-radius: 20px;
+    display: inline-block;
+}
+q{
+    font-family: 'Potta One', sans-serif;
+}
+p{
+    text-indent: 10%;
+    text-align: justify;
+    font-family: 'Potta One';
+    font-size: 16pt;
+}
+p.box{
+    text-indent: 0px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 22pt;
+    display: inline-block;
+    border:1px solid black;
+    margin:auto;
+    padding:64px;
+}
