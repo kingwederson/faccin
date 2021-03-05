@@ -1,63 +1,11 @@
 body{
-    background-color: rgb(77,218,141);
-    margin:auto;
-    border-radius: 40px;
+    background-image: url("https://i.imgur.com/Fuif4e0.png");
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
-h1,h2,h3{
-    text-align: center;
-    font-family: sans-serif;
-    text-transform: uppercase;
-    font-size: 32pt;
-    font-family: 'Potta One', cursive;
-    transition-duration: 4s;
-}
-h2{
-    font-size: 32pt;
-}
-h3{
-    font-size: 26pt;
-}
-section{
-    padding:100px;
-    padding-bottom:150px;
-    margin:150px;
-}
-section:nth-child(odd){
-    background-color: black;
-    color: rgb(77,218,141);
-    border:1px solid rgb(77,218,141);
-}
-section:nth-child(even){
-    background-color:rgb(77,218,141);
-    color: black;
-}
-section#cab{            
-    clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
-    padding:20px;
-    margin:0px;
-    position: sticky;
-    top:0px;
-    left:0px;
-}
-section#primeira{
-    min-height: 400px;
-    clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0 100%);
-}
-section#segunda{
-    min-height: 600px;
-    clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0 100%);
-}
-section#terceira{
-    min-height: 400px;
-    clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0 100%);
-}
-section#quarta{
-    min-height: 400px;
-    clip-path: polygon(0 0%, 100% -10%, 100% 90%, 0 100%);
-}
-nav#menu ul{
-    list-style:none;
-    margin:auto;
+.linha{
+    display: inline-block;
 }
 nav#menu li{
     display: inline-block;
@@ -74,59 +22,74 @@ nav#menu li:hover{
     color:red;
     transition: 0.8s;
 }
-img#logo{
-    display: inline-block;
-    max-width: 256px;
-    transform: translate(0%,40%);
+nav#menu a{ 
+    text-decoration: none;
 }
 img.cliente{
-    max-width: 256px;
+    max-width: 128px;
     border-radius: 128px;
+    display: inline-block;
 }
-div.texto{
-    columns: 400px;
-    column-gap: 1cm;
-}
-div.conteudo{
-    display: block;
-}
-div.coninter{
-    max-width:100%;
-    display: block;
-    break-inside: avoid;
-    transition-duration: 4s;
-    border:1px black red;
-    text-align: center;
-}
-iframe{
-    border-radius: 20px;
-    display: inline-flex;
-    float:left;
-    width:426px;
-    height:240px;
+img.icon{
+    max-width: 64px;
 }
 q{
     font-family: 'Potta One', sans-serif;
+    max-width: 512px;
+    margin: auto;
+}
+.fluido{
+    display:inline-block;
+    text-align: center;
+    margin:auto;
+    max-width: 300px;
+}
+section{
+    margin-bottom: 150px;
+}
+section#cab{
+    margin:0px;
+    background-image: linear-gradient(to right, rgba(77,218,141,1) , rgba(0,0,0,0));
+}
+div.texto{
+    columns: 360px;
+    padding: 5%;
+}
+div.conteudo:nth-child(odd){
+    background-color: #000000a0;
+    color:#4dda8d;
+}
+div.conteudo:nth-child(even){
+    background-color: #4dda8d80;
+    color:#000000;
+}
+div.coninter{
+    text-align: center;
 }
 p{
-    text-indent: 10%;
+    text-indent: 5vw;
     text-align: justify;
-    font-family: 'Potta One';
-    font-size: 16pt;
+    font-family: "Potta One";
 }
-p.box{
-    text-indent: 0px;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 22pt;
+p.central{
+    text-indent: 0vw;
+    text-align: center;
     display: inline-block;
-    border:1px solid black;
-    margin:auto;
-    padding:64px;
+    margin:30px;
 }
-input[type="text"]{
+h1,h2,h3{
+    text-align: center;
+    font-family: sans-serif;
+    text-transform: uppercase;
     font-size: 32pt;
-    color:black;
-    font-family: 'Potta One';
+    font-family: 'Potta One', cursive;
+    transition-duration: 4s;
+}
+section#primeira,section#segunda,section#terceira,section#quarta{
+    background-image: url("https://i.imgur.com/DqRrwSA.jpg");
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 input[type="submit"]{
     background-color:rgb(77,218,141);
@@ -136,9 +99,4 @@ input[type="submit"]{
     color:black;
     font-family: 'Potta One';
     border-radius: 18px;
-}
-.fluido{
-    display:inline;
-    text-align: center;
-    margin:auto;
 }
