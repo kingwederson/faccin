@@ -25,6 +25,9 @@ nav#menu li:hover{
 nav#menu a{ 
     text-decoration: none;
 }
+img#logo{
+    max-width: 100%;
+}
 img.cliente{
     max-width: 128px;
     border-radius: 128px;
@@ -75,7 +78,7 @@ p.central{
     text-indent: 0vw;
     text-align: center;
     display: inline-block;
-    margin:30px;
+    padding:30px;
 }
 h1,h2,h3{
     text-align: center;
@@ -91,10 +94,14 @@ section#primeira,section#segunda,section#terceira,section#quarta{
     background-size: cover;
     background-attachment: fixed;
 }
+section#terceira div.conteudo {
+    text-align: center;
+    margin:auto;
+}
 input[type="submit"]{
     background-color:rgb(77,218,141);
     font-size: 18pt;
-    margin:12px;
+    margin:auto;
     padding:12px;
     color:black;
     font-family: 'Potta One';
