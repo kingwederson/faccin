@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fábrica de Nutella</title>
-    <link rel="stylesheet" href="estilo.css?id=5">
+    <link rel="stylesheet" href="estilo.css?id=6">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Potta+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Coda+Caption:wght@800&display=swap" rel="stylesheet">
@@ -13,6 +13,7 @@
 <body>
     <section id="cab">
         <div class="conteudo">
+            <span id="hora"></span>
             <a href="http://faccin.wederson.net.br/"><img class="linha" id="logo" src="https://i.imgur.com/ap0zqem.png" alt="Fábrica de Nutella"></a>
             <nav class="linha" id="menu">
                 <ul>
@@ -22,14 +23,14 @@
                     <a class="linha" href="#titulo4"><li>Pagamentos</li></a>
                 </ul>
             </nav>
-        </div>
-        
+        </div>   
     </section>
     <section id="primeira" class="secao">
         <div class="conteudo">
             <h2 id="titulo1">Verba volant, scripta manent</h2>
         <div class="texto">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec purus lacus. Sed ut nunc elit. Pellentesque consectetur, velit eget suscipit suscipit, lorem felis interdum elit, nec faucibus nisi tellus ut risus. Vivamus nec libero luctus, mollis lacus eu, sollicitudin quam. Sed feugiat lacus velit, ut varius elit fringilla non. Mauris at nunc malesuada, volutpat mi non, luctus velit. Nulla a dui orci. Ut eleifend non mi vel ultrices. Sed pharetra ultricies felis nec commodo. In maximus sem quis urna finibus ultrices. Nullam mollis feugiat venenatis.</p>
+            <img class="capitular" src="https://i.imgur.com/zTWSri6.jpeg">
             <p>Aenean tristique lobortis ligula tincidunt efficitur. Maecenas rutrum venenatis sapien vel ultricies. Suspendisse mattis dui nec pretium tincidunt. Donec varius mauris lorem, quis euismod nisi consequat non. Vivamus scelerisque, magna ut dignissim laoreet, nibh justo volutpat ligula, vitae pulvinar justo lacus et dui. Nulla in urna egestas, consectetur eros et, mollis urna. Suspendisse potenti. Morbi in orci orci. Donec ut tincidunt diam. Suspendisse fringilla, nibh vitae molestie hendrerit, massa lectus dapibus felis, a dapibus lacus libero non tortor. Sed et leo nec ipsum venenatis tristique. Phasellus euismod, metus quis laoreet vehicula, nunc neque pulvinar nisl, et fringilla diam turpis ut ex.</p>
         </div>
         </div>
@@ -88,5 +89,17 @@
             </form>
         </div>
     </section>
+
+    <section id="ultima" class="secao">
+        <div class="conteudo">
+        <span id="copy"></span>
+        </div>
+    </section>
+
+    <script>
+        var hora = new Date()
+        document.getElementById('hora').innerHTML = `${hora.getHours()}:${hora.getMinutes()}`
+        document.getElementById('copy').innerHTML = `&copy; ${hora.getFullYear()} Fábrica de Nutella &trade;<br>&copy; ${hora.getFullYear()} Wederson Network Webservices &trade;<br>wederson.net.br`
+    </script>
 </body>
 </html>

@@ -36,6 +36,10 @@ img.cliente{
 img.icon{
     max-width: 64px;
 }
+img.capitular{
+    display: inline-block;
+    max-width: 384px;
+}
 q{
     font-family: 'Potta One', sans-serif;
     max-width: 512px;
@@ -94,7 +98,7 @@ section#primeira,section#segunda,section#terceira,section#quarta{
     background-size: cover;
     background-attachment: fixed;
 }
-section#terceira div.conteudo {
+section#terceira div.conteudo, section#ultima div.conteudo{
     text-align: center;
     margin:auto;
 }
@@ -106,4 +110,10 @@ input[type="submit"]{
     color:black;
     font-family: 'Potta One';
     border-radius: 18px;
+}
+span#hora{
+    position: absolute;
+    margin:auto;
+    right:10px;
+    top:10px;
 }
